@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="header.container">
+            <container name="example.container" htmlTag="div" before="-">
+                <block class="Magento\Framework\View\Element\Template" name="example.block" template="Magento_Theme::test.phtml" ifconfig="carriers/freeshipping/active"/>
+            </container>
+        </referenceContainer>
+        <move element="form.subscribe" destination="main" before="footer" after="page.main.container"/>
+        <block class="Magento\Newsletter\Block\Subscribe" name="form.subscribe" as="subscribe" template="Magento_Theme::subscribe.phtml"/>
+    </body>
+</page>
