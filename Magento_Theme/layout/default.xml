@@ -7,6 +7,5 @@
             </container>
         </referenceContainer>
         <move element="form.subscribe" destination="main" before="footer" after="page.main.container"/>
-        <block class="Magento\Newsletter\Block\Subscribe" name="form.subscribe" as="subscribe" template="Magento_Theme::subscribe.phtml"/>
     </body>
 </page>
